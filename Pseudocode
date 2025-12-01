@@ -19,3 +19,24 @@ FUNCTION addStop(stopName)
     PRINT "Added stop: " + stopName
 END FUNCTION
 -------------------------------------------------------------------------
+Saad (061)
+FUNCTION addPassenger(name)
+    SET passengerQueue[rearQ] = name
+    INCREMENT rearQ
+    PRINT "Passenger added to queue: " + name
+END FUNCTION
+
+FUNCTION undoLastRouteUpdate()
+    IF historyTop >= 0 THEN
+        DECREMENT historyTop
+        IF historyTop >= 0 THEN
+            SET routeHead = routeHistory[historyTop]
+        ELSE
+            SET routeHead = NULL
+        END IF
+        PRINT "Last route update undone."
+    ELSE
+        PRINT "No route updates to undo."
+    END IF
+END FUNCTION
+----------------------------------------------------------------------------
