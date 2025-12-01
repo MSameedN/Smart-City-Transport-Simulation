@@ -1,1 +1,21 @@
+Sameed (031):
+FUNCTION addStop(stopName)
+    CREATE newNode
+    SET newNode.name = stopName
+    SET newNode.next = NULL
 
+    IF routeHead IS NULL THEN
+        SET routeHead = newNode
+    ELSE
+        SET temp = routeHead
+        WHILE temp.next IS NOT NULL
+            SET temp = temp.next
+        END WHILE
+        SET temp.next = newNode
+    END IF
+
+    INCREMENT historyTop
+    SET routeHistory[historyTop] = CALL cloneRoute(routeHead)
+    PRINT "Added stop: " + stopName
+END FUNCTION
+-------------------------------------------------------------------------
