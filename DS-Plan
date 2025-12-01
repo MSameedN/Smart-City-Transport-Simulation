@@ -1,1 +1,17 @@
+1. Data Structure Planning Table
 
+| Operation | Data Structure | Reason for Choosing DS |
+| --------- | -------------- | ---------------------- |
+| Add Stop  | Singly Linked List (`RouteNode`) | Allows dynamic memory allocation to add an unlimited number of stops without re-sizing, and models the sequential nature of a bus route (Stop A -> Stop B). |
+
+2. Operation Flow Explanation
+
+Operation: Add Stop to Route
+*What it does: Appends a new specific location (stop) to the end of the current transport route.
+* Data Structure: Singly Linked List.
+* Why it is suitable: Transport routes are sequential. A Linked List allows us to start at the `Head` (first stop) and traverse to the end to add a new stop efficiently without needing to know the total size of the route beforehand.
+* User Interaction:
+    1.  User selects "1. Add Stop to Route" from the menu.
+    2.  System prompts "Enter stop name:".
+    3.  User inputs a string (e.g., "Main Street").
+    4.  System confirms "Added stop: Main Street" and updates the route history for undo functionality.
