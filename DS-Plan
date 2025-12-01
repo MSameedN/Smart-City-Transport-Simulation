@@ -4,6 +4,9 @@
 | --------- | -------------- | ---------------------- |
 | Add Stop  | Singly Linked List (`RouteNode`) | Allows dynamic memory allocation to add an unlimited number of stops without re-sizing, and models the sequential nature of a bus route (Stop A -> Stop B). |
 
+| Add Passenger | Queue (Array Implementation) | Passengers arrive in a specific order and must be served First-In-First-Out (FIFO). |
+| Undo Update | Stack (Array `routeHistory`) | We need to revert to the most recent previous state. Last-In-First-Out (LIFO) is the exact behavior required for undo operations. |
+
 2. Operation Flow Explanation
 
 Operation: Add Stop to Route
@@ -15,3 +18,13 @@ Operation: Add Stop to Route
     2.  System prompts "Enter stop name:".
     3.  User inputs a string (e.g., "Main Street").
     4.  System confirms "Added stop: Main Street" and updates the route history for undo functionality.
+
+Operation: Add Passenger to Queue
+* What it does: Adds a waiting passenger to the end of the line.
+* Data Structure: Queue (Array).
+* Why it is suitable: A Queue enforces fairness (FIFO). The first person to arrive (`front`) should board first, and new people join at the `rear`.
+* User Interaction:
+    1.  User selects "5. Add Passenger to Queue".
+    2.  System asks "Enter passenger name:".
+    3.  User inputs name (e.g., "Alice").
+    4.  System adds Alice to the `rear` index and confirms.
