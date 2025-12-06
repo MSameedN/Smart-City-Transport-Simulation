@@ -1,0 +1,8 @@
+# Eisenhower Matrix: Smart City Transport
+
+| Quadrant | Tasks |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1. Urgent & Important** (Do First) | • **Testing:** Verify `removeStop` does not crash on empty lists.<br>• **GitHub:** Upload `src/main.cpp` immediately.<br>• **Fix:** Resolve queue "False Overflow" issue. |
+| **2. Important & Not Urgent** (Schedule) | • **Optimization:** Implement Circular Queue logic.<br>• **Persistence:** Add file handling to save routes on exit.<br>• **Refactor:** Split code into header files. |
+| **3. Urgent & Not Important** (Delegate) | • **Styling:** Fix indentation in switch cases.<br>• **Comments:** Add documentation for the `cloneRoute` function.<br>• **Meeting:** Quick sync with Danial on testing. |
+| **4. Not Urgent & Not Important** (Delete) | • **UI Colors:** Adding colors to the console.<br>• **Extras:** "Fare Calculator" feature (out of scope). |
