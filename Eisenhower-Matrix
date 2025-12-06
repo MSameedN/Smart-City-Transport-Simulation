@@ -1,8 +1,8 @@
 # Eisenhower Matrix: Smart City Transport
 
 | Quadrant | Tasks |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1. Urgent & Important** (Do First) | • **Testing:** Verify `removeStop` does not crash on empty lists.<br>• **GitHub:** Upload `src/main.cpp` immediately.<br>• **Fix:** Resolve queue "False Overflow" issue. |
-| **2. Important & Not Urgent** (Schedule) | • **Optimization:** Implement Circular Queue logic.<br>• **Persistence:** Add file handling to save routes on exit.<br>• **Refactor:** Split code into header files. |
-| **3. Urgent & Not Important** (Delegate) | • **Styling:** Fix indentation in switch cases.<br>• **Comments:** Add documentation for the `cloneRoute` function.<br>• **Meeting:** Quick sync with Danial on testing. |
-| **4. Not Urgent & Not Important** (Delete) | • **UI Colors:** Adding colors to the console.<br>• **Extras:** "Fare Calculator" feature (out of scope). |
+| -------- | ----- |
+| **1. Urgent & Important** (Do First) | • **Testing:** Verify `simulateRun()` handles passengers with invalid destinations gracefully.<br>• **GitHub:** Upload `src/main.cpp` immediately.<br>• **Validation:** Fix infinite loop bug if user enters 'abc' instead of a number for menu choice. |
+| **2. Important & Not Urgent** (Schedule) | • **Persistence:** Implement file I/O to save/load Stations and Routes so data isn't lost on exit.<br>• **Refactor:** Move `Passenger` struct to a header file. |
+| **3. Urgent & Not Important** (Delegate) | • **Styling:** Add more descriptive distinct separators in console output.<br>• **Docs:** Add comments explaining `std::map` usage for the external examiner. |
+| **4. Not Urgent & Not Important** (Delete) | • **Circular Queue:** (Completed via `std::queue`).<br>• **Manual Memory Management:** (Obsolete due to STL). |
